@@ -1,6 +1,7 @@
 import java.awt.Rectangle;
 import java.awt.Point;
 import java.awt.Dimension;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class PointsAndRectangles
@@ -8,7 +9,25 @@ public class PointsAndRectangles
 
     public static void main(String[] args)
     {
-        Scanner kb = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the X coordinate: ");
+        int x = scan.nextInt();
+        System.out.print("Enter the Y coordinate: ");
+        int y = scan.nextInt();
+        System.out.print("Enter the width: ");
+        int width = scan.nextInt();
+        System.out.print("Enter the height: ");
+        int height = scan.nextInt();
+        Point p = new Point(x,y);
+        Dimension d = new Dimension(width, height);
+        Rectangle r = new Rectangle (p, d);
+        System.out.println(p);
+        System.out.println(d);
+        System.out.println(r);
+
+
+
+
         // create print statements and get input for the x and y values.
 
         //Instantiate a Point object p. Hint: you will need the keyword "new"
