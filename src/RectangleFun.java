@@ -4,57 +4,24 @@ import java.util.Scanner;
 public class RectangleFun {
 
     public static void main(String[] args) {
-        // Create a scanner object to be able to get input from the user
+
         Scanner scan = new Scanner(System.in);
 
-        public double getX();
-    {
-            System.out.println("Please enter the x-coordinate of your rectangle: ");
-            scan.nextInt();
-    }
-
-
-
-        public double getY();
-    {
+        System.out.println("Please enter the x-coordinate of your rectangle: ");
+        int x = scan.nextInt();
         System.out.println("Please enter the y-coordinate of your rectangle: ");
-        scan.nextInt();
-    }
-
-        public double getWidth();
-    {
-            System.out.println("Please enter the width of your rectangle: ");
-            scan.nextInt();
-
-    }
-
-        public double getHeight();
-    {
+        int y = scan.nextInt();
+        System.out.println("Please enter the width of your rectangle: ");
+        int width = scan.nextInt();
         System.out.println("Please enter the height of your rectangle: ");
-        scan.nextDouble();
-
-        return 3.5;
-    }
+        int height = scan.nextInt();
+        Rectangle r = new Rectangle( x, y, width, height);
 
 
 
-        public void setLocation(int x, int y);
-        {
+        System.out.println("Perimeter= "+2*(r.getHeight()+r.getWidth()));
+        System.out.print("New location is "+r.setLocation(r.getX()-4,r.getY()+2));
 
-        }
-
-
-        public Rectangle(int x,int y,int width,int height);
-        {
-            System.out.println("X: "+getX);
-            System.out.println("Y: "+getY);
-            System.out.println("Width: "+getWidth);
-            System.out.println("Height: "+getHeight);
-        }
-public void perimeter();
-    {
-        System.out.println("Perimeter: "+2*(getHeight+getWidth));
-    }
         // Get input for x, y, width, and height. Create four separate variables for these.
 
 
